@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Pacifico&display=swap');
+
+
+/* styling general */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+/* Styling du header */
+
+header {
+    background: url(../images/banner.jpg) no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    font-family: "Pacifico", cursive;
+    padding-bottom: .5rem;
+}
+
+header p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header hr {
+    border: none;
+    padding-bottom: 2rem;
+    border-top: 1px solid white;
+    width: 37rem;
+}
+
+header a:visited,
+header a:link {
+    color: #fff;
+    text-decoration-style: dotted;
+}
+
+/* Styling of the main section */
+main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.first-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.first-container h2 {
+    text-transform: uppercase;
+}
