@@ -33,6 +33,7 @@ header {
     color: #fff;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 header h1 {
@@ -68,15 +69,154 @@ main {
     flex-direction: column;
 }
 
+
+/* styling de la premier section */
+
 .first-container {
+    margin: 4rem 0rem;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 3rem;
+    padding: 10rem;
 
+}
+
+.fa-gem {
+    font-size: 5rem;
 }
 
 .first-container h2 {
     text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.first-container p {
+    width: 50%;
+    text-align: center;
+    color: #94999E;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+/* styling de tout les boutons qui sont entourés d'une bordure */
+.first-container a:link,
+.first-container a:visited,
+.grid-4 a:link,
+.grid-4 a:visited,
+.third-section a:link,
+.third-section a:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #292D31;
+    padding: 1rem 2rem;
+    border: 1px solid #292D31;
+    border-radius: 3px;
+    letter-spacing: .1rem;
+}
+
+
+/* Styling of the grid */
+
+.grid-4 {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.grid-4 p {
+    color: #94999E;
+    text-align: center;
+    width: 80%;
+}
+
+.grid-4 a {
+    font-size: 1rem;
+}
+
+.img-grid img {
+    width: 100%;
+}
+
+.img-grid {
+    position: relative;
+    text-align: center;
+}
+
+.img-grid h3 {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-ele {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: #fff;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    padding-bottom: 4rem;
+}
+
+
+/* styling de la dernière section Etiam */
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 10rem 0;
+}
+
+.third-section h2 {
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.third-section p {
+    width: 30%;
+    ;
+    color: #94999E;
+    ;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-nav a {
+    font-size: 1.5rem;
+    color: #292D31;
 }

@@ -1,0 +1,36 @@
+@media (max-width : 768px) {
+    main {
+        width: 96%;
+    }
+}
+
+@media(max-width:320px) {
+    html {
+        font-size: 56%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .first-container {
+        padding: 5rem;
+    }
+
+    .first-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .first-container p {
+        width: 80%;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .third-section p {
+        width: 70%;
+    }
+}
