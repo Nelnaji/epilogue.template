@@ -18,14 +18,15 @@ body {
     background-color: #f4f4f4;
 }
 
-img::after {}
 
 /* Styling du header */
 
 header {
-    background: url(../images/banner.jpg) no-repeat center center;
+    background-image: linear-gradient(rgba(41, 41, 41, 0.6),
+            rgba(22, 22, 22, 0.6)), url(../images/banner.jpg);
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
+
 }
 
 header {
@@ -41,6 +42,7 @@ header h1 {
     font-size: 5rem;
     font-family: "Pacifico", cursive;
     padding-bottom: .5rem;
+
 }
 
 header p {
@@ -52,7 +54,7 @@ header p {
 header hr {
     border: none;
     padding-bottom: 2rem;
-    border-top: 1px solid white;
+    border-top: 1px solid #fff;
     width: 37rem;
 }
 
@@ -82,14 +84,15 @@ main {
     flex-direction: column;
     gap: 3rem;
     padding: 10rem;
+    border-radius: 3px;
 
 }
 
 .icon-header {
     font-size: 5rem;
-    color: #94999E;
+    color: #292D31;
     padding: 1rem;
-    border: 2px solid #94999E;
+    border: 2px solid #292D31;
     border-radius: 50%;
 }
 
@@ -111,6 +114,7 @@ main {
 }
 
 
+
 /* styling de tout les boutons qui sont entourés d'une bordure */
 .first-container a:link,
 .first-container a:visited,
@@ -127,6 +131,11 @@ main {
     letter-spacing: .1rem;
 }
 
+.first-container a:link,
+.first-container a:visited {
+    font-size: 1.2rem;
+    padding: 1.3rem 2.8rem;
+}
 
 /* Styling of the grid */
 
@@ -149,7 +158,10 @@ main {
 
 .img-grid img {
     width: 100%;
+    filter: brightness(0.6);
+
 }
+
 
 .img-grid {
     position: relative;
@@ -164,6 +176,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .grid-ele {
@@ -176,6 +189,8 @@ main {
     letter-spacing: .1rem;
     font-size: 1.4rem;
     padding-bottom: 4rem;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 
@@ -236,10 +251,13 @@ footer hr {
     color: #94999E;
 }
 
+footer p {
+    font-size: 1.3rem;
+}
+
 footer p a:link,
 footer p a:visited {
     text-decoration: none;
     border-bottom: 1px dotted;
-    font-size: 1.6rem;
     color: #94999E;
 }
