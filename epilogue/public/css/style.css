@@ -18,6 +18,7 @@ body {
     background-color: #f4f4f4;
 }
 
+img::after {}
 
 /* Styling du header */
 
@@ -84,8 +85,12 @@ main {
 
 }
 
-.fa-gem {
+.icon-header {
     font-size: 5rem;
+    color: #94999E;
+    padding: 1rem;
+    border: 2px solid #94999E;
+    border-radius: 50%;
 }
 
 .first-container h2 {
@@ -198,25 +203,43 @@ main {
     color: #94999E;
     ;
     text-align: center;
-    line-height: 1.6rem;
-    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
 }
 
 footer {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5rem;
     padding-bottom: 4rem;
     justify-content: center;
     align-items: center;
+    font-family: "Lato", sans-serif;
+
+    color: #94999E;
+}
+
+footer hr {
+    width: 10%;
 }
 
 .footer-nav {
+    padding-top: 2rem;
     display: flex;
     gap: 2rem;
 }
 
-.footer-nav a {
-    font-size: 1.5rem;
-    color: #292D31;
+.icon-link:link,
+.icon-link:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #94999E;
+}
+
+footer p a:link,
+footer p a:visited {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    font-size: 1.6rem;
+    color: #94999E;
 }
